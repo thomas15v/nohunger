@@ -1,0 +1,26 @@
+plugins {
+    id "com.qixalite.spongestart" version "1.5.2"
+    id 'org.spongepowered.plugin' version '0.6'
+}
+
+group 'com.thomas15v'
+version '1.0-SNAPSHOT'
+
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://repo.spongepowered.org/maven/'
+    }
+}
+
+spongestart{
+    eula true
+}
+
+dependencies{
+    //you still need to set your dependency on sponge, this plugin only handles the running part.
+    compile 'org.spongepowered:spongeapi:5.0.0-SNAPSHOT'
+}
